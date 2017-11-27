@@ -1,0 +1,360 @@
+
+body
+{
+	background-color: #2D3142;
+	color: #f2f2f2;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+	margin: auto;
+}
+
+html{
+	font-size:17px;
+	border: 1px groove #f2f2f2;
+}
+#container
+{
+	height: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav
+{
+	background-color: #1a1a1a;
+}
+
+input[type=checkbox],
+.show-menu{
+	display:none;
+}
+
+.wrapper{
+	max-width:960px;
+	margin:0 auto;
+	color:#ecf0f1;
+	font-family:helvetica;
+}
+
+.navigation{
+	display:flex;
+	list-style-type:none;
+	padding: 0;
+	margin: 0;
+	line-height: 200%;
+}
+
+.navigation > li{
+	background:#1a1a1a;
+	flex:1;
+	text-align:center;
+	transition:all .2s ease;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 1px solid white;
+}
+
+.navigation > li:hover{
+	background:#333333;
+	flex:1.1;
+}
+
+.navigation > li > a{
+	display:block;
+	padding:20px 0;
+
+	text-decoration:none;
+	transition: all 1s ease;;
+	color: #e6e6e6;
+	text-decoration: none;
+}
+
+.navigation > li:hover > a
+{
+	color:  #006bb3;
+}
+
+.navigation > li:first-child
+{
+	border-left: 1px solid white;
+	
+}
+
+#photo1
+{
+	width: 20%;
+	height: 600px;
+	background-image: url("images/background.png");
+	float: left;
+}
+
+#slider
+{
+	width: 80%;
+	height: 600px;
+	float: left;
+}
+
+#slider>img
+{
+	width: 100%;
+	height:600px;
+	position: sticky;
+}
+
+#slider>.btn
+{	
+	position:absolute;
+	width: 50px;
+	height: 50px;
+}
+
+#slider>#btn2
+{
+	top: 550px;
+	position: sticky;
+	float: right;	
+}
+#slider>#btn1
+{
+	top: 550px;
+	position: sticky;
+	float:right;
+}
+
+#bottom
+{
+	background-color: #2D3142;
+	line-height: 200%;
+	height: 260px;
+}
+
+#about
+{
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+	letter-spacing: 1px;
+	float:left;
+	width: 5%;
+	text-align: center;
+	margin-right: 5%;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#text
+{
+	float:left;
+	width: 65%;
+	text-align:justify;
+}
+
+#socials
+{
+	text-align: left;
+	letter-spacing: 1px;
+	list-style-type: none;
+	float:left;
+	width: 20%;
+	margin-left: 5%;
+}
+
+a
+{
+	color: #f2f2f2;;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #006bb3;
+	transition: all 1s ease;
+}
+
+footer
+{
+	padding-top: 19px;
+	height: 38px;
+	float: left;
+	width: 100%;
+	background-color: #1a1a1a;
+	text-align: center;
+} 
+	
+.typewriter{
+  color: #f2f2f2;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 2.3em;
+  margin: 18% 0 0 23%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 15s steps(2000, end); 
+}
+/*
+p:nth-child(2){
+  animation: type2 12s steps(2000, end);
+}
+
+p:nth-child(3){
+  animation: type3 14s steps(2000, end);
+}
+
+p:nth-child(4){
+  animation: type4 16s steps(2000, end);
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  20%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes type3{
+  0%{width: 0;}
+  30%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes type4{
+  0%{width: 0;}
+  40%{width: 0;}
+  100%{ width: 100; } 
+} 
+*/
+
+@media screen and (min-width: 500px){
+  html{
+    font-size: 13px;
+  }
+  
+}
+@media screen and (min-width: 570px){
+  html{
+    font-size: 14px;
+  }
+  
+}
+@media screen and (min-width: 620px){
+  html{
+    font-size: 15px;
+  }
+   
+}
+@media screen and (min-width: 680px){
+  html{
+    font-size: 16px;
+  }
+ 
+}
+@media screen and (min-width: 720px){
+  html{
+    font-size: 17px;
+  }
+ 
+}
+@media screen and (min-width: 800px){
+  html{
+    font-size: 18px;
+  }
+   
+}
+@media screen and (min-width: 860px){
+  html{
+    font-size: 19px;
+  }
+  
+}
+@media screen and (min-width: 920px){
+  html{
+    font-size: 20px;
+  }
+
+}
+@media screen and (min-width: 1000px){
+  html{
+    font-size: 21px;
+  }
+  
+  }
+
+@media screen and (max-width: 1200px){
+	.typewriter
+	{
+	display: none;
+	}
+		#photo1
+	{
+		width:0;
+	}
+	#slider
+	{
+		width: 100%;
+	}
+}
+
+
+
+
+
+/*giving style for mobile*/
+
+@media screen and (max-width:600px){
+	
+	.show-menu{
+		background:#342a2a;
+		display:flex;
+		cursor:pointer;
+		padding:20px 0;
+		justify-content:center;
+	}
+	
+	.navigation{
+		display:none;
+	}
+	
+	
+	input[type=checkbox]:checked ~ .navigation{
+		display:block;
+	}
+	
+
+	.navigation li:not(:first-child){
+		border:0;
+	}
+	
+	.navigation li:not(:last-child){
+		margin:2px 0;
+	}
+}
+
+@media screen and (max-width:565px){
+	.icon-github-circled
+	{
+		font-size: 2em;
+		display:none;
+	}
+	#FCC
+	{
+		display: none;
+	}
+	#Codewars
+	{
+		display:none;
+	}
+	.icon-codepen
+	{
+		display:none;
+	}
+}
+@media screen and (max-width:800px){
+#about
+	{
+	display:none;
+	}
+}
